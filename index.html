@@ -141,6 +141,17 @@
     .call-btn{padding:9px 13px;font-size:13px}
     section{padding:48px 16px}
   }
+
+  /* ---------- Real Photos ---------- */
+  .hero-art .frame img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+  .card .photo{height:185px;border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .card .photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+  .card:hover .photo img{transform:scale(1.06)}
+  .about-photo{border-radius:20px;overflow:hidden;box-shadow:0 18px 40px rgba(74,14,20,.28);border:2px solid rgba(201,162,39,.5)}
+  .about-photo img{width:100%;height:100%;min-height:340px;object-fit:cover}
+  .gal{padding:0;overflow:hidden;text-align:center}
+  .gal img{width:100%;height:200px;object-fit:cover}
+  .gal .cap{padding:14px 12px 18px}
 </style>
 </head>
 <body>
@@ -177,23 +188,7 @@
       </div>
     </div>
     <div class="hero-art">
-      <div class="frame">
-        <svg viewBox="0 0 200 200" fill="none">
-          <circle cx="100" cy="100" r="86" stroke="#e8c766" stroke-width="1.5" stroke-dasharray="4 6" opacity=".7"/>
-          <!-- necklace -->
-          <path d="M45 55 C45 115, 70 148, 100 152 C130 148, 155 115, 155 55" stroke="#e8c766" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-          <path d="M58 58 C60 105, 78 132, 100 136 C122 132, 140 105, 142 58" stroke="#c9a227" stroke-width="2" fill="none" opacity=".75"/>
-          <circle cx="62" cy="86" r="3" fill="#f5e3a8"/><circle cx="76" cy="112" r="3" fill="#f5e3a8"/><circle cx="124" cy="112" r="3" fill="#f5e3a8"/><circle cx="138" cy="86" r="3" fill="#f5e3a8"/>
-          <!-- pendant -->
-          <path d="M100 152 l0 8" stroke="#e8c766" stroke-width="3"/>
-          <path d="M100 160 c10 8 12 16 0 26 c-12 -10 -10 -18 0 -26z" fill="#c9a227" stroke="#f5e3a8" stroke-width="1.5"/>
-          <circle cx="100" cy="172" r="3.5" fill="#8a1c2e" stroke="#f5e3a8"/>
-          <!-- sparkles -->
-          <path d="M36 34 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z" fill="#f5e3a8"/>
-          <path d="M164 30 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#f5e3a8" opacity=".85"/>
-          <path d="M168 150 l1.8 4.4 4.4 1.8 -4.4 1.8 -1.8 4.4 -1.8 -4.4 -4.4 -1.8 4.4 -1.8z" fill="#f5e3a8" opacity=".7"/>
-        </svg>
-      </div>
+      <div class="frame"><img src="img1.jpg" alt="Traditional Indian gold bridal necklace set with matching ruby earrings"></div>
     </div>
   </div>
 </div>
@@ -209,32 +204,32 @@
     </div>
     <div class="grid">
       <div class="card">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><circle cx="12" cy="14" r="5.2"/><path d="M12 8.8V5M8.5 4.2 12 2l3.5 2.2M7 20.5h10" stroke-linecap="round"/></svg></div>
+        <div class="photo"><img src="img3.jpg" alt="Gold chains and necklaces on display at the shop" loading="lazy"></div>
         <h3>Gold Jewellery</h3>
         <p>Necklaces, bangles, rings, earrings, mangalsutras and chains — classic and modern designs for every age and occasion.</p>
       </div>
       <div class="card">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M7 4h10l3.5 5L12 20 3.5 9 7 4z" stroke-linejoin="round"/><path d="M3.5 9h17M12 20 8.8 9l2-5M12 20l3.2-11-2-5" stroke-linejoin="round"/></svg></div>
+        <div class="photo"><img src="img4.jpg" alt="Diamond halo ring in a presentation box" loading="lazy"></div>
         <h3>Diamond Jewellery</h3>
         <p>Sparkling diamond rings, pendants, earrings and sets that add brilliance to engagements, anniversaries and celebrations.</p>
       </div>
       <div class="card">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M5 20c0-4.5 3-8 7-9 4 1 7 4.5 7 9" stroke-linecap="round"/><circle cx="12" cy="7" r="3"/><path d="M4 20h16" stroke-linecap="round"/></svg></div>
+        <div class="photo"><img src="img5.jpg" alt="Silver-toned diamond bracelet" loading="lazy"></div>
         <h3>Silver Jewellery &amp; Articles</h3>
         <p>Silver jewellery, pooja articles, utensils and gift items — perfect for festivals, housewarmings and thoughtful gifting.</p>
       </div>
       <div class="card">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8 3.6 4.9 6.9 4.9c2 0 3.9 1.1 5.1 2.9 1.2-1.8 3.1-2.9 5.1-2.9 3.3 0 5.6 3.1 4.2 6.9C19.5 16.4 12 21 12 21z" stroke-linejoin="round"/></svg></div>
+        <div class="photo"><img src="img6.jpg" alt="Woman wearing layered gold necklaces" loading="lazy"></div>
         <h3>Bridal Jewellery Sets</h3>
         <p>Complete bridal sets for the big day — necklaces, jhumkas, maang tikka, nath and more, matched to your outfit and budget.</p>
       </div>
       <div class="card">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><circle cx="9" cy="9" r="5.5"/><circle cx="16.5" cy="16.5" r="4.5"/><path d="M9 6.2v5.6M6.8 8h4.4" stroke-linecap="round"/></svg></div>
+        <div class="photo"><img src="img7.jpg" alt="Gold bars and coins" loading="lazy"></div>
         <h3>Gold &amp; Silver Coins</h3>
         <p>Coins for Dhanteras, Akshaya Tritiya, weddings and gifting — a timeless way to save, celebrate and bless your loved ones.</p>
       </div>
       <div class="card">
-        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M4 9a8 8 0 0 1 14.5-3M20 15a8 8 0 0 1-14.5 3" stroke-linecap="round"/><path d="M18.5 2.5v4h-4M5.5 21.5v-4h4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="photo"><img src="img8.jpg" alt="Gold rings arranged as a still life" loading="lazy"></div>
         <h3>Old Gold Exchange</h3>
         <p>Bring your old jewellery and exchange it for a fresh new design. Simple, transparent evaluation right in front of you.</p>
       </div>
@@ -251,24 +246,7 @@
       <p>From a small pair of earrings for a daughter to a complete bridal set for a wedding, our team helps you choose designs that suit your taste and your budget — with honest guidance, patient service and no pressure to buy.</p>
       <p>Walk in for a look, call us for an enquiry, or message us on WhatsApp — we are always happy to help you find the piece that feels just right.</p>
     </div>
-    <div class="about-art">
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><path d="M12 3l2.1 4.6L19 8.3l-3.6 3.4 1 4.9L12 14.2l-4.4 2.4 1-4.9L5 8.3l4.9-.7L12 3z" stroke-linejoin="round"/></svg>
-        <b>Handpicked Designs</b><span>Fresh styles for every occasion</span>
-      </div>
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><path d="M12 21s-7-3.6-7-10V5.5L12 3l7 2.5V11c0 6.4-7 10-7 10z" stroke-linejoin="round"/><path d="M9 11.5l2.2 2.2L15.5 9.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <b>Honest Dealing</b><span>Clear, transparent evaluation</span>
-      </div>
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8 3.6 4.9 6.9 4.9c2 0 3.9 1.1 5.1 2.9 1.2-1.8 3.1-2.9 5.1-2.9 3.3 0 5.6 3.1 4.2 6.9C19.5 16.4 12 21 12 21z" stroke-linejoin="round"/></svg>
-        <b>Family First</b><span>Guidance like our own home</span>
-      </div>
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2" stroke-linecap="round"/></svg>
-        <b>At Your Service</b><span>Call or WhatsApp anytime</span>
-      </div>
-    </div>
+    <div class="about-photo"><img src="img2.jpg" alt="Woman wearing a delicate gold necklace from Amit Abhushan Bhandar"></div>
   </div>
 </section>
 
@@ -315,22 +293,10 @@
       <div class="divider"></div>
     </div>
     <div class="gal-grid">
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><path d="M5 4c0 7 3 12 7 13 4-1 7-6 7-13" stroke-linecap="round"/><circle cx="12" cy="19.5" r="1.6" fill="#e8c766"/></svg>
-        <b>Bridal Necklaces</b><span>Sets that complete the look</span>
-      </div>
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.4"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3" stroke-linecap="round"/></svg>
-        <b>Gold Bangles</b><span>Everyday &amp; festive wear</span>
-      </div>
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><path d="M8 3.5c0 3-1.5 4.5-1.5 7a5.5 5.5 0 0 0 11 0c0-2.5-1.5-4-1.5-7" stroke-linecap="round"/><path d="M12 21l-1.8-3h3.6L12 21z" fill="#e8c766"/></svg>
-        <b>Jhumka Earrings</b><span>Classic temple styles</span>
-      </div>
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><circle cx="12" cy="14" r="5"/><path d="M12 9V5.5M9 4l3-2 3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <b>Rings &amp; Coins</b><span>For gifting &amp; blessings</span>
-      </div>
+      <div class="gal"><img src="img1.jpg" alt="Traditional Indian gold bridal necklace set" loading="lazy"><div class="cap"><b>Bridal Necklace Sets</b><span>Sets that complete the look</span></div></div>
+      <div class="gal"><img src="img6.jpg" alt="Woman wearing layered gold necklaces" loading="lazy"><div class="cap"><b>Gold Necklaces</b><span>Layered styles for every occasion</span></div></div>
+      <div class="gal"><img src="img3.jpg" alt="Gold chains and pendants on display" loading="lazy"><div class="cap"><b>Chains &amp; Pendants</b><span>Classic gold, crafted to last</span></div></div>
+      <div class="gal"><img src="img7.jpg" alt="Gold bars and coins" loading="lazy"><div class="cap"><b>Gold Coins</b><span>For gifting &amp; blessings</span></div></div>
     </div>
   </div>
 </section>
