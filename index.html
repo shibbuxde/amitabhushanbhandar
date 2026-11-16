@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amit Abhushan Bhandar — Trusted Jewellery Shop in Faridabad</title>
+<meta name="description" content="Amit Abhushan Bhandar, Faridabad — gold, diamond and silver jewellery, bridal sets, coins and old gold exchange. Visit us or call for enquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#4a0e14; --maroon2:#6d1420; --maroon3:#8a1c2e;
+    --gold:#c9a227; --gold2:#e8c766; --gold3:#f5e3a8;
+    --cream:#fdf7ec; --ink:#2b1a12; --muted:#7a5c48;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  h1,h2,h3,.serif{font-family:'Playfair Display',serif}
+  img,svg{display:block}
+  a{text-decoration:none}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,var(--maroon),var(--maroon2));box-shadow:0 4px 18px rgba(74,14,20,.35)}
+  .header-in{max-width:1150px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:12px;color:#fff}
+  .brand .monogram{width:46px;height:46px;flex:0 0 46px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:800;font-size:20px;color:var(--gold2);background:rgba(0,0,0,.18)}
+  .brand h1{font-size:20px;line-height:1.15;color:#fff}
+  .brand small{display:block;font-family:'Poppins',sans-serif;font-size:11px;letter-spacing:2.5px;color:var(--gold2);text-transform:uppercase;font-weight:500}
+  .call-btn{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3d0a10;font-weight:600;font-size:14px;padding:10px 18px;border-radius:30px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,.3);white-space:nowrap}
+  .call-btn:hover{filter:brightness(1.07)}
+
+  /* ---------- Hero ---------- */
+  .hero{background:
+      radial-gradient(ellipse 60% 50% at 85% 10%, rgba(232,199,102,.28), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 8% 90%, rgba(232,199,102,.16), transparent 60%),
+      linear-gradient(150deg,#5c0f18 0%,#4a0e14 45%,#33090e 100%);
+    color:#fff;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;opacity:.10;
+    background-image:radial-gradient(circle at 1px 1px, var(--gold2) 1.4px, transparent 0);background-size:26px 26px}
+  .hero-in{max-width:1150px;margin:0 auto;padding:64px 18px 74px;position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}
+  .hero .kicker{display:inline-block;border:1px solid var(--gold);color:var(--gold2);font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:18px}
+  .hero h2{font-size:44px;line-height:1.14;font-weight:800;margin-bottom:16px}
+  .hero h2 span{color:var(--gold2)}
+  .hero p{color:#f3e4cf;font-size:16.5px;max-width:520px;margin-bottom:26px;font-weight:300}
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3d0a10;font-weight:600;padding:13px 26px;border-radius:30px;font-size:15px;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+  .btn-line{border:1.5px solid var(--gold2);color:var(--gold3);padding:13px 26px;border-radius:30px;font-size:15px;font-weight:500}
+  .btn-line:hover,.btn-gold:hover{filter:brightness(1.08)}
+  .hero-art{display:flex;justify-content:center}
+  .hero-art .frame{width:100%;max-width:340px;aspect-ratio:1;border:2px solid rgba(232,199,102,.55);border-radius:50%;padding:14px;background:radial-gradient(circle at 50% 35%, rgba(232,199,102,.22), rgba(0,0,0,.25) 75%)}
+  .hero-art svg{width:100%;height:100%}
+  .hero-points{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+  .hero-points span{font-size:12.5px;color:var(--gold3);border:1px solid rgba(232,199,102,.45);padding:6px 13px;border-radius:20px;background:rgba(0,0,0,.18)}
+
+  /* ---------- Sections ---------- */
+  section{padding:64px 18px}
+  .wrap{max-width:1150px;margin:0 auto}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 40px}
+  .sec-head .tag{color:var(--maroon3);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+  .sec-head h2{font-size:32px;color:var(--maroon);margin:8px 0 10px}
+  .sec-head p{color:var(--muted);font-size:15px}
+  .divider{width:74px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin:14px auto 0;border-radius:3px}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:#fff;border:1px solid #efdfc2;border-radius:16px;padding:28px 24px;box-shadow:0 6px 20px rgba(122,60,20,.06);transition:transform .25s, box-shadow .25s}
+  .card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(122,60,20,.13)}
+  .card .icon{width:58px;height:58px;border-radius:14px;background:linear-gradient(145deg,var(--maroon2),var(--maroon3));display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .card h3{font-size:19px;color:var(--maroon);margin-bottom:8px}
+  .card p{font-size:14px;color:var(--muted)}
+
+  /* About */
+  .about{background:linear-gradient(180deg,#fff8ea,#fdf7ec)}
+  .about-in{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+  .about h2{font-size:31px;color:var(--maroon);margin-bottom:14px}
+  .about p{color:#5d4634;font-size:15.5px;margin-bottom:14px}
+  .about-art{background:linear-gradient(150deg,var(--maroon2),var(--maroon));border-radius:20px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .about-art .tile{background:rgba(255,255,255,.06);border:1px solid rgba(232,199,102,.4);border-radius:14px;padding:20px 14px;text-align:center;color:var(--gold3)}
+  .about-art .tile svg{margin:0 auto 10px}
+  .about-art .tile b{display:block;font-family:'Playfair Display',serif;font-size:16px;color:#fff}
+  .about-art .tile span{font-size:12px}
+
+  /* Why us */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .why{background:#fff;border-top:4px solid var(--gold);border-radius:12px;padding:24px 18px;box-shadow:0 6px 18px rgba(122,60,20,.07);text-align:center}
+  .why svg{margin:0 auto 12px}
+  .why h3{font-size:16.5px;color:var(--maroon);margin-bottom:6px;font-family:'Poppins',sans-serif;font-weight:600}
+  .why p{font-size:13.5px;color:var(--muted)}
+
+  /* Gallery */
+  .gallery{background:linear-gradient(160deg,#3d0a10,#5c0f18);color:#fff}
+  .gallery .sec-head h2{color:#fff}
+  .gallery .sec-head p{color:#e9d3ae}
+  .gallery .sec-head .tag{color:var(--gold2)}
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .gal{border:1px solid rgba(232,199,102,.45);border-radius:16px;padding:26px 12px 20px;text-align:center;background:radial-gradient(circle at 50% 30%, rgba(232,199,102,.16), rgba(0,0,0,.22))}
+  .gal svg{margin:0 auto 12px}
+  .gal b{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold3);display:block}
+  .gal span{font-size:12px;color:#d8c49a}
+
+  /* Info / FAQ */
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+  .info-card{background:#fff;border:1px solid #efdfc2;border-radius:16px;padding:28px;box-shadow:0 6px 20px rgba(122,60,20,.06)}
+  .info-card h3{color:var(--maroon);font-size:21px;margin-bottom:16px}
+  .info-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed #ecd9ae;font-size:14.5px}
+  .info-row:last-child{border-bottom:none}
+  .info-row b{color:var(--maroon);min-width:86px}
+  .map-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--maroon);color:#fff;padding:11px 20px;border-radius:30px;font-size:14px;font-weight:500}
+  .map-link:hover{background:var(--maroon2)}
+  details{background:#fff;border:1px solid #efdfc2;border-radius:12px;padding:16px 20px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:600;color:var(--maroon);font-size:15px}
+  details p{font-size:14px;color:var(--muted);margin-top:8px}
+
+  /* Final CTA */
+  .cta{background:linear-gradient(135deg,var(--maroon2),var(--maroon));color:#fff;text-align:center;border-radius:22px;padding:46px 24px;max-width:1150px;margin:0 auto}
+  .cta h2{font-size:30px;margin-bottom:10px}
+  .cta p{color:#f0ddba;max-width:520px;margin:0 auto 24px;font-size:15px}
+  .cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+  /* Footer */
+  footer{padding:26px 18px 96px;text-align:center;color:var(--muted);font-size:13.5px}
+
+  /* Floating WhatsApp */
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+  .wa-float:hover{transform:scale(1.06)}
+
+  @media(max-width:900px){
+    .hero-in{grid-template-columns:1fr;text-align:center}
+    .hero p{margin:0 auto 26px}
+    .hero-ctas,.hero-points{justify-content:center}
+    .hero-art{order:-1}
+    .hero-art .frame{max-width:230px}
+    .hero h2{font-size:34px}
+    .grid{grid-template-columns:1fr 1fr}
+    .why-grid,.gal-grid{grid-template-columns:1fr 1fr}
+    .about-in,.info-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:540px){
+    .grid{grid-template-columns:1fr}
+    .brand h1{font-size:16.5px}
+    .call-btn{padding:9px 13px;font-size:13px}
+    section{padding:48px 16px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="header-in">
+    <div class="brand">
+      <div class="monogram">A</div>
+      <h1>Amit Abhushan Bhandar<small>Jewellers · Faridabad</small></h1>
+    </div>
+    <a class="call-btn" href="tel:+919911600016">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#3d0a10"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      Call Now
+    </a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="hero-in">
+    <div>
+      <span class="kicker">Faridabad's Family Jeweller</span>
+      <h2>Shagun ka sona,<br><span>bharose ke saath.</span></h2>
+      <p>From everyday gold to grand bridal sets — Amit Abhushan Bhandar brings you jewellery crafted for your family's most precious moments, right here in Faridabad.</p>
+      <div class="hero-ctas">
+        <a class="btn-gold" href="tel:+919911600016">📞 Call the Shop</a>
+        <a class="btn-line" href="https://wa.me/919911600016" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+      <div class="hero-points">
+        <span>✦ Gold · Diamond · Silver</span>
+        <span>✦ Bridal Collections</span>
+        <span>✦ Old Gold Exchange</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="frame">
+        <svg viewBox="0 0 200 200" fill="none">
+          <circle cx="100" cy="100" r="86" stroke="#e8c766" stroke-width="1.5" stroke-dasharray="4 6" opacity=".7"/>
+          <!-- necklace -->
+          <path d="M45 55 C45 115, 70 148, 100 152 C130 148, 155 115, 155 55" stroke="#e8c766" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M58 58 C60 105, 78 132, 100 136 C122 132, 140 105, 142 58" stroke="#c9a227" stroke-width="2" fill="none" opacity=".75"/>
+          <circle cx="62" cy="86" r="3" fill="#f5e3a8"/><circle cx="76" cy="112" r="3" fill="#f5e3a8"/><circle cx="124" cy="112" r="3" fill="#f5e3a8"/><circle cx="138" cy="86" r="3" fill="#f5e3a8"/>
+          <!-- pendant -->
+          <path d="M100 152 l0 8" stroke="#e8c766" stroke-width="3"/>
+          <path d="M100 160 c10 8 12 16 0 26 c-12 -10 -10 -18 0 -26z" fill="#c9a227" stroke="#f5e3a8" stroke-width="1.5"/>
+          <circle cx="100" cy="172" r="3.5" fill="#8a1c2e" stroke="#f5e3a8"/>
+          <!-- sparkles -->
+          <path d="M36 34 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z" fill="#f5e3a8"/>
+          <path d="M164 30 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#f5e3a8" opacity=".85"/>
+          <path d="M168 150 l1.8 4.4 4.4 1.8 -4.4 1.8 -1.8 4.4 -1.8 -4.4 -4.4 -1.8 4.4 -1.8z" fill="#f5e3a8" opacity=".7"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">What We Offer</span>
+      <h2>Our Collections &amp; Services</h2>
+      <p>Everything a family needs for weddings, festivals and everyday elegance — under one roof.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><circle cx="12" cy="14" r="5.2"/><path d="M12 8.8V5M8.5 4.2 12 2l3.5 2.2M7 20.5h10" stroke-linecap="round"/></svg></div>
+        <h3>Gold Jewellery</h3>
+        <p>Necklaces, bangles, rings, earrings, mangalsutras and chains — classic and modern designs for every age and occasion.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M7 4h10l3.5 5L12 20 3.5 9 7 4z" stroke-linejoin="round"/><path d="M3.5 9h17M12 20 8.8 9l2-5M12 20l3.2-11-2-5" stroke-linejoin="round"/></svg></div>
+        <h3>Diamond Jewellery</h3>
+        <p>Sparkling diamond rings, pendants, earrings and sets that add brilliance to engagements, anniversaries and celebrations.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M5 20c0-4.5 3-8 7-9 4 1 7 4.5 7 9" stroke-linecap="round"/><circle cx="12" cy="7" r="3"/><path d="M4 20h16" stroke-linecap="round"/></svg></div>
+        <h3>Silver Jewellery &amp; Articles</h3>
+        <p>Silver jewellery, pooja articles, utensils and gift items — perfect for festivals, housewarmings and thoughtful gifting.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8 3.6 4.9 6.9 4.9c2 0 3.9 1.1 5.1 2.9 1.2-1.8 3.1-2.9 5.1-2.9 3.3 0 5.6 3.1 4.2 6.9C19.5 16.4 12 21 12 21z" stroke-linejoin="round"/></svg></div>
+        <h3>Bridal Jewellery Sets</h3>
+        <p>Complete bridal sets for the big day — necklaces, jhumkas, maang tikka, nath and more, matched to your outfit and budget.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><circle cx="9" cy="9" r="5.5"/><circle cx="16.5" cy="16.5" r="4.5"/><path d="M9 6.2v5.6M6.8 8h4.4" stroke-linecap="round"/></svg></div>
+        <h3>Gold &amp; Silver Coins</h3>
+        <p>Coins for Dhanteras, Akshaya Tritiya, weddings and gifting — a timeless way to save, celebrate and bless your loved ones.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.7"><path d="M4 9a8 8 0 0 1 14.5-3M20 15a8 8 0 0 1-14.5 3" stroke-linecap="round"/><path d="M18.5 2.5v4h-4M5.5 21.5v-4h4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Old Gold Exchange</h3>
+        <p>Bring your old jewellery and exchange it for a fresh new design. Simple, transparent evaluation right in front of you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about">
+  <div class="wrap about-in">
+    <div>
+      <h2>About Amit Abhushan Bhandar</h2>
+      <p>Jewellery is never just an ornament — it carries blessings, memories and the hard-earned savings of a family. At Amit Abhushan Bhandar, Faridabad, we treat every purchase with that respect.</p>
+      <p>From a small pair of earrings for a daughter to a complete bridal set for a wedding, our team helps you choose designs that suit your taste and your budget — with honest guidance, patient service and no pressure to buy.</p>
+      <p>Walk in for a look, call us for an enquiry, or message us on WhatsApp — we are always happy to help you find the piece that feels just right.</p>
+    </div>
+    <div class="about-art">
+      <div class="tile">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><path d="M12 3l2.1 4.6L19 8.3l-3.6 3.4 1 4.9L12 14.2l-4.4 2.4 1-4.9L5 8.3l4.9-.7L12 3z" stroke-linejoin="round"/></svg>
+        <b>Handpicked Designs</b><span>Fresh styles for every occasion</span>
+      </div>
+      <div class="tile">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><path d="M12 21s-7-3.6-7-10V5.5L12 3l7 2.5V11c0 6.4-7 10-7 10z" stroke-linejoin="round"/><path d="M9 11.5l2.2 2.2L15.5 9.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <b>Honest Dealing</b><span>Clear, transparent evaluation</span>
+      </div>
+      <div class="tile">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8 3.6 4.9 6.9 4.9c2 0 3.9 1.1 5.1 2.9 1.2-1.8 3.1-2.9 5.1-2.9 3.3 0 5.6 3.1 4.2 6.9C19.5 16.4 12 21 12 21z" stroke-linejoin="round"/></svg>
+        <b>Family First</b><span>Guidance like our own home</span>
+      </div>
+      <div class="tile">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2" stroke-linecap="round"/></svg>
+        <b>At Your Service</b><span>Call or WhatsApp anytime</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">The Difference</span>
+      <h2>Why Families Choose Us</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8a1c2e" stroke-width="1.6"><path d="M12 21s-7-3.6-7-10V5.5L12 3l7 2.5V11c0 6.4-7 10-7 10z" stroke-linejoin="round"/><path d="M9 11.5l2.2 2.2L15.5 9.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Trust Above All</h3>
+        <p>Every transaction is explained clearly, so you always know exactly what you are buying.</p>
+      </div>
+      <div class="why">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8a1c2e" stroke-width="1.6"><path d="M7 4h10l3.5 5L12 20 3.5 9 7 4z" stroke-linejoin="round"/><path d="M3.5 9h17" /></svg>
+        <h3>Designs for Everyone</h3>
+        <p>Traditional, modern and bridal styles — something beautiful for every generation.</p>
+      </div>
+      <div class="why">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8a1c2e" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.5c1 1.2 2.2 1.8 3.5 1.8s2.5-.6 3.5-1.8M9 9.2h.01M15 9.2h.01" stroke-linecap="round"/></svg>
+        <h3>No-Pressure Shopping</h3>
+        <p>Browse at your own pace. We guide, you decide — that's how jewellery should be bought.</p>
+      </div>
+      <div class="why">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8a1c2e" stroke-width="1.6"><path d="M4 9a8 8 0 0 1 14.5-3M20 15a8 8 0 0 1-14.5 3" stroke-linecap="round"/><path d="M18.5 2.5v4h-4M5.5 21.5v-4h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Easy Exchange</h3>
+        <p>Old gold sitting unused? Exchange it for a design you will actually love to wear.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Collections</span>
+      <h2>Made for Your Special Days</h2>
+      <p>A glimpse of what awaits you at the shop — visit us to see the full collection in person.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="gal-grid">
+      <div class="gal">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><path d="M5 4c0 7 3 12 7 13 4-1 7-6 7-13" stroke-linecap="round"/><circle cx="12" cy="19.5" r="1.6" fill="#e8c766"/></svg>
+        <b>Bridal Necklaces</b><span>Sets that complete the look</span>
+      </div>
+      <div class="gal">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.4"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3" stroke-linecap="round"/></svg>
+        <b>Gold Bangles</b><span>Everyday &amp; festive wear</span>
+      </div>
+      <div class="gal">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><path d="M8 3.5c0 3-1.5 4.5-1.5 7a5.5 5.5 0 0 0 11 0c0-2.5-1.5-4-1.5-7" stroke-linecap="round"/><path d="M12 21l-1.8-3h3.6L12 21z" fill="#e8c766"/></svg>
+        <b>Jhumka Earrings</b><span>Classic temple styles</span>
+      </div>
+      <div class="gal">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#e8c766" stroke-width="1.3"><circle cx="12" cy="14" r="5"/><path d="M12 9V5.5M9 4l3-2 3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <b>Rings &amp; Coins</b><span>For gifting &amp; blessings</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIMINGS / LOCATION / FAQ ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Visit Us</span>
+      <h2>Timings, Location &amp; Questions</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>🕙 Timings &amp; Location</h3>
+        <div class="info-row"><b>Open</b><span>All days of the week</span></div>
+        <div class="info-row"><b>Hours</b><span>Morning to evening — please call to confirm today's timings</span></div>
+        <div class="info-row"><b>Location</b><span>Amit Abhushan Bhandar, Faridabad, Haryana</span></div>
+        <div class="info-row"><b>Phone</b><span><a href="tel:+919911600016" style="color:var(--maroon3);font-weight:600">+91 99116 00016</a></span></div>
+        <a class="map-link" href="https://www.google.com/maps/search/Amit+Abhushan+Bhandar+Faridabad" target="_blank" rel="noopener">📍 Find Us on Google Maps</a>
+      </div>
+      <div>
+        <details>
+          <summary>Do you make bridal jewellery sets to order?</summary>
+          <p>Yes — share your outfit colours and the style you have in mind, and we will help you put together a complete bridal set that matches. Visit the shop or call us to discuss.</p>
+        </details>
+        <details>
+          <summary>Can I exchange my old gold jewellery?</summary>
+          <p>Yes, we offer old gold exchange. Bring your old jewellery to the shop — it will be evaluated in front of you, and the value can be adjusted towards a new design of your choice.</p>
+        </details>
+        <details>
+          <summary>Do you have jewellery for festivals and gifting?</summary>
+          <p>Absolutely. Gold and silver coins, silver articles and a wide range of gift-ready pieces are available for festivals like Dhanteras and Diwali, weddings and family occasions.</p>
+        </details>
+        <details>
+          <summary>How can I enquire about a design before visiting?</summary>
+          <p>Simply call us on <a href="tel:+919911600016" style="color:var(--maroon3);font-weight:600">+91 99116 00016</a> or tap the WhatsApp button on this page — tell us what you are looking for and we will guide you.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT + FINAL CTA ================= -->
+<section style="padding-top:0">
+  <div class="cta">
+    <h2>Your Perfect Piece is Waiting ✨</h2>
+    <p>Whether it's a wedding, a festival, or just because — visit Amit Abhushan Bhandar in Faridabad, or reach out now and let us help you choose.</p>
+    <div class="row">
+      <a class="btn-gold" href="tel:+919911600016">📞 +91 99116 00016</a>
+      <a class="btn-line" href="https://wa.me/919911600016" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  made by shibbux
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/919911600016" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.8-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+</body>
+</html>
